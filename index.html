@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Chu Ky So</title>
+</head>
+<body>
+    <div class="num">
+        <input id="a" type="number">
+        <input id="anpha" type="number">
+        <input id="p" type="number">
+        <input id="k" type="number">
+        <input id="beta" type="number">
+        <input id="gama" type="text">
+        <input id="xicma" type="text">
+    </div>
+    <header>
+        <h1>Kiểm tra chữ ký</h1>
+        <div class="taok">
+            <button class="btn" id="taokhoa">Tạo Khóa</button>
+        </div>
+    </header>
+
+    <div class="container">
+        <div class="form form1">
+            <div class="title">
+                <h1>Phát sinh chữ ký</h1>
+            </div>
+            <div class="inp">
+                <label for="ky">Văn bản ký:</label>
+                <textarea class="inpkta"  id="inputky" placeholder="nhập vào văn bản"></textarea>
+                <label class="fileinpt" for="file1">file</label>
+                <input class="put" id="file1" type="file" name="textFile" accept=".txt, .doc, .docx" >
+            </div>
+            <div class="btn1">
+                <button id="btnky" class="btn btnky" >Ký</button>
+            </div>
+    
+            <div class="chuky">
+                <div class="out">
+                    <label for="kiemtra">Chữ ký: </label>
+                    <p class="theky" id="vanbanky" ></p>
+                    <div class="nut">
+                        <button class="btn chuyen">Chuyển</button>
+                        <button class="btn download">Lưu</button>
+                    </div>
+                </div>
+                
+            </div>
+        </div>
+    
+        <div class="form form2">
+            <div class="title">
+                <h1>Kiểm tra chữ ký</h1>
+            </div>
+            <div class="inp">
+                <label for="inputKtra">Văn bản ký:</label>
+                <textarea class="inpkta"  id="inputktra" placeholder="nhập vào văn bản"></textarea>
+                <label class="fileinpt" for="file2">file văn bản</label>
+                <input class="put" id="file2" type="file">
+            </div>
+            <div class="out">
+                <label  for="kiemtra">Chữ ký: </label>
+                <p class="theky" id="vanbanktra" ></p>
+                <label class="fileinpt" for="fileck">file chữ ký</label>
+                <input class="put" id="fileck" type="file">
+                
+            </div>
+                
+            <div class="btnkt">
+                <button id="btnktra" class="btn btnktra" >Kiểm tra chữ ký</button>
+            </div>
+            <div class="thongbao">
+                <label for="thongbao">Thông báo: </label>
+                <p class="theky" id="thongbao"></p>
+            </div>
+        </div>
+    </div>
+
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/mammoth/1.4.4/mammoth.browser.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/FileSaver.js/2.0.5/FileSaver.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/big-integer/1.6.48/BigInteger.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/crypto-js/4.0.0/crypto-js.min.js"></script>
+    <script src="index.js"></script>
+</body>
+</html>
